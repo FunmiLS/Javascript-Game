@@ -14,6 +14,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice
 
+    // display computer choice and result
     generateComputerChoice()
     getResult()
 
@@ -22,6 +23,9 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 //Writing a function to generate the computer's choice
 function generateComputerChoice(){
     const randomNumber = Math.floor(Math.random() * possibleChoices.length)+ 1
+    
+    // math.floor : returns closest integer value
+    // math.random * length : returns a number between 0 and 2
     
 
     if (randomNumber == 1) {
@@ -34,6 +38,8 @@ function generateComputerChoice(){
         computerChoice = 'paper'
     }
     computerChoiceDisplay.innerHTML = computerChoice
+    
+    // inner html returns the text content only
 }
 
 function getResult() {
