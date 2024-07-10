@@ -1,6 +1,6 @@
 # Javascript-Game
 
-The following code creates a simple rock-paper-scissors game. 
+The following code creates a simple rock-paper-scissors game. The game functionality relies on event listeners and random number generators.
 
 ## Files
 - app.js (rock paper scissors game developed using JavaScript)
